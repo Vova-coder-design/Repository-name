@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Avtomagazin_Data_BaseDataSet" targetNamespace="http://tempuri.org/Avtomagazin_Data_BaseDataSet.xsd" xmlns:mstns="http://tempuri.org/Avtomagazin_Data_BaseDataSet.xsd" xmlns="http://tempuri.org/Avtomagazin_Data_BaseDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Avtomagazin_Data_BaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Avtomagazin_Data_BaseConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.AvtoMagazin.Properties.Settings.GlobalReference.Default.Avtomagazin_Data_BaseConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Check_PredstavlenieTableAdapter" GeneratorDataComponentClassName="Check_PredstavlenieTableAdapter" Name="Check_Predstavlenie" UserDataComponentName="Check_PredstavlenieTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Avtomagazin_Data_BaseConnectionString (Settings)" DbObjectName="Avtomagazin_Data_Base.dbo.Check_Predstavlenie" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [ФИО клиента], [Название товара], [Номер чека], Дата FROM dbo.Check_Predstavlenie</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ФИО клиента" DataSetColumn="ФИО клиента" />
+              <Mapping SourceColumn="Название товара" DataSetColumn="Название товара" />
+              <Mapping SourceColumn="Номер чека" DataSetColumn="Номер чека" />
+              <Mapping SourceColumn="Дата" DataSetColumn="Дата" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Avtomagazin_Data_BaseDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Avtomagazin_Data_BaseDataSet" msprop:Generator_UserDSName="Avtomagazin_Data_BaseDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Check_Predstavlenie" msprop:Generator_TableClassName="Check_PredstavlenieDataTable" msprop:Generator_TableVarName="tableCheck_Predstavlenie" msprop:Generator_TablePropName="Check_Predstavlenie" msprop:Generator_RowDeletingName="Check_PredstavlenieRowDeleting" msprop:Generator_RowChangingName="Check_PredstavlenieRowChanging" msprop:Generator_RowEvHandlerName="Check_PredstavlenieRowChangeEventHandler" msprop:Generator_RowDeletedName="Check_PredstavlenieRowDeleted" msprop:Generator_UserTableName="Check_Predstavlenie" msprop:Generator_RowChangedName="Check_PredstavlenieRowChanged" msprop:Generator_RowEvArgName="Check_PredstavlenieRowChangeEvent" msprop:Generator_RowClassName="Check_PredstavlenieRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ФИО_x0020_клиента" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnФИО_клиента" msprop:Generator_ColumnPropNameInRow="ФИО_клиента" msprop:Generator_ColumnPropNameInTable="ФИО_клиентаColumn" msprop:Generator_UserColumnName="ФИО клиента" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="92" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Название_x0020_товара" msprop:Generator_ColumnVarNameInTable="columnНазвание_товара" msprop:Generator_ColumnPropNameInRow="Название_товара" msprop:Generator_ColumnPropNameInTable="Название_товараColumn" msprop:Generator_UserColumnName="Название товара">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Номер_x0020_чека" msprop:Generator_ColumnVarNameInTable="columnНомер_чека" msprop:Generator_ColumnPropNameInRow="Номер_чека" msprop:Generator_ColumnPropNameInTable="Номер_чекаColumn" msprop:Generator_UserColumnName="Номер чека">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Дата" msprop:Generator_ColumnVarNameInTable="columnДата" msprop:Generator_ColumnPropNameInRow="Дата" msprop:Generator_ColumnPropNameInTable="ДатаColumn" msprop:Generator_UserColumnName="Дата">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

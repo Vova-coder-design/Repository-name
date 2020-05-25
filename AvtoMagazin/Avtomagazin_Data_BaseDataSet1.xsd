@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Avtomagazin_Data_BaseDataSet1" targetNamespace="http://tempuri.org/Avtomagazin_Data_BaseDataSet1.xsd" xmlns:mstns="http://tempuri.org/Avtomagazin_Data_BaseDataSet1.xsd" xmlns="http://tempuri.org/Avtomagazin_Data_BaseDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Avtomagazin_Data_BaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Avtomagazin_Data_BaseConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.AvtoMagazin.Properties.Settings.GlobalReference.Default.Avtomagazin_Data_BaseConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Nackladnaya_PredstavlenieTableAdapter" GeneratorDataComponentClassName="Nackladnaya_PredstavlenieTableAdapter" Name="Nackladnaya_Predstavlenie" UserDataComponentName="Nackladnaya_PredstavlenieTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Avtomagazin_Data_BaseConnectionString (Settings)" DbObjectName="Avtomagazin_Data_Base.dbo.Nackladnaya_Predstavlenie" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Номер накладной], Дата, Поставщик, [Ответственный сотрудник], Товар, [Сумма заказа] FROM dbo.Nackladnaya_Predstavlenie</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Номер накладной" DataSetColumn="Номер накладной" />
+              <Mapping SourceColumn="Дата" DataSetColumn="Дата" />
+              <Mapping SourceColumn="Поставщик" DataSetColumn="Поставщик" />
+              <Mapping SourceColumn="Ответственный сотрудник" DataSetColumn="Ответственный сотрудник" />
+              <Mapping SourceColumn="Товар" DataSetColumn="Товар" />
+              <Mapping SourceColumn="Сумма заказа" DataSetColumn="Сумма заказа" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Avtomagazin_Data_BaseDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Avtomagazin_Data_BaseDataSet1" msprop:Generator_UserDSName="Avtomagazin_Data_BaseDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Nackladnaya_Predstavlenie" msprop:Generator_TableClassName="Nackladnaya_PredstavlenieDataTable" msprop:Generator_TableVarName="tableNackladnaya_Predstavlenie" msprop:Generator_TablePropName="Nackladnaya_Predstavlenie" msprop:Generator_RowDeletingName="Nackladnaya_PredstavlenieRowDeleting" msprop:Generator_RowChangingName="Nackladnaya_PredstavlenieRowChanging" msprop:Generator_RowEvHandlerName="Nackladnaya_PredstavlenieRowChangeEventHandler" msprop:Generator_RowDeletedName="Nackladnaya_PredstavlenieRowDeleted" msprop:Generator_UserTableName="Nackladnaya_Predstavlenie" msprop:Generator_RowChangedName="Nackladnaya_PredstavlenieRowChanged" msprop:Generator_RowEvArgName="Nackladnaya_PredstavlenieRowChangeEvent" msprop:Generator_RowClassName="Nackladnaya_PredstavlenieRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Номер_x0020_накладной" msprop:Generator_ColumnVarNameInTable="columnНомер_накладной" msprop:Generator_ColumnPropNameInRow="Номер_накладной" msprop:Generator_ColumnPropNameInTable="Номер_накладнойColumn" msprop:Generator_UserColumnName="Номер накладной">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Дата" msprop:Generator_ColumnVarNameInTable="columnДата" msprop:Generator_ColumnPropNameInRow="Дата" msprop:Generator_ColumnPropNameInTable="ДатаColumn" msprop:Generator_UserColumnName="Дата">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Поставщик" msprop:Generator_ColumnVarNameInTable="columnПоставщик" msprop:Generator_ColumnPropNameInRow="Поставщик" msprop:Generator_ColumnPropNameInTable="ПоставщикColumn" msprop:Generator_UserColumnName="Поставщик">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="90" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ответственный_x0020_сотрудник" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnОтветственный_сотрудник" msprop:Generator_ColumnPropNameInRow="Ответственный_сотрудник" msprop:Generator_ColumnPropNameInTable="Ответственный_сотрудникColumn" msprop:Generator_UserColumnName="Ответственный сотрудник" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="92" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Товар" msprop:Generator_ColumnVarNameInTable="columnТовар" msprop:Generator_ColumnPropNameInRow="Товар" msprop:Generator_ColumnPropNameInTable="ТоварColumn" msprop:Generator_UserColumnName="Товар">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Сумма_x0020_заказа" msprop:Generator_ColumnVarNameInTable="columnСумма_заказа" msprop:Generator_ColumnPropNameInRow="Сумма_заказа" msprop:Generator_ColumnPropNameInTable="Сумма_заказаColumn" msprop:Generator_UserColumnName="Сумма заказа">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

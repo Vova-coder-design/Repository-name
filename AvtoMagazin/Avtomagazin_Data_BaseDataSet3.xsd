@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Avtomagazin_Data_BaseDataSet3" targetNamespace="http://tempuri.org/Avtomagazin_Data_BaseDataSet3.xsd" xmlns:mstns="http://tempuri.org/Avtomagazin_Data_BaseDataSet3.xsd" xmlns="http://tempuri.org/Avtomagazin_Data_BaseDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Avtomagazin_Data_BaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Avtomagazin_Data_BaseConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.AvtoMagazin.Properties.Settings.GlobalReference.Default.Avtomagazin_Data_BaseConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="KlientTableAdapter" GeneratorDataComponentClassName="KlientTableAdapter" Name="Klient" UserDataComponentName="KlientTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Avtomagazin_Data_BaseConnectionString (Settings)" DbObjectName="Avtomagazin_Data_Base.dbo.Klient" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT First_Name_Klient FROM dbo.Klient</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="First_Name_Klient" DataSetColumn="First_Name_Klient" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Avtomagazin_Data_BaseDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Avtomagazin_Data_BaseDataSet3" msprop:Generator_UserDSName="Avtomagazin_Data_BaseDataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Klient" msprop:Generator_TableClassName="KlientDataTable" msprop:Generator_TableVarName="tableKlient" msprop:Generator_TablePropName="Klient" msprop:Generator_RowDeletingName="KlientRowDeleting" msprop:Generator_RowChangingName="KlientRowChanging" msprop:Generator_RowEvHandlerName="KlientRowChangeEventHandler" msprop:Generator_RowDeletedName="KlientRowDeleted" msprop:Generator_UserTableName="Klient" msprop:Generator_RowChangedName="KlientRowChanged" msprop:Generator_RowEvArgName="KlientRowChangeEvent" msprop:Generator_RowClassName="KlientRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="First_Name_Klient" msprop:Generator_ColumnVarNameInTable="columnFirst_Name_Klient" msprop:Generator_ColumnPropNameInRow="First_Name_Klient" msprop:Generator_ColumnPropNameInTable="First_Name_KlientColumn" msprop:Generator_UserColumnName="First_Name_Klient">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2798BA52-FBDC-4DD5-ADC7-FC6231576C9C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AvtoMagazin</RootNamespace>
+    <AssemblyName>AvtoMagazin</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClassLibrary2">
+      <HintPath>..\..\..\..\..\..\source\repos\ClassLibrary2\ClassLibrary2\bin\Release\ClassLibrary2.dll</HintPath>
+    </Reference>
+    <Reference Include="Crypt">
+      <HintPath>..\..\..\..\..\Продажа товара\Crypt\bin\Debug\Crypt.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\..\Downloads\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\..\Downloads\Microsoft.Office.Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Authorization_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authorization_Form.Designer.cs">
+      <DependentUpon>Authorization_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Avtomagazin_Data_BaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Avtomagazin_Data_BaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Avtomagazin_Data_BaseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Avtomagazin_Data_BaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Avtomagazin_Data_BaseDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Avtomagazin_Data_BaseDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Avtomagazin_Data_BaseDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Avtomagazin_Data_BaseDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Avtomagazin_Data_BaseDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Avtomagazin_Data_BaseDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Avtomagazin_Data_BaseDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Avtomagazin_Data_BaseDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Check_Export.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Check_Export.Designer.cs">
+      <DependentUpon>Check_Export.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Check_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Check_Form.Designer.cs">
+      <DependentUpon>Check_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration_class.cs" />
+    <Compile Include="Connection_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connection_Form.Designer.cs">
+      <DependentUpon>Connection_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExportMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExportMenu.Designer.cs">
+      <DependentUpon>ExportMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function_Class.cs" />
+    <Compile Include="Invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice.Designer.cs">
+      <DependentUpon>Invoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Klient_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Klient_Form.Designer.cs">
+      <DependentUpon>Klient_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personal_Profile_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal_Profile_Employee.Designer.cs">
+      <DependentUpon>Personal_Profile_Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personal_Profile_Klient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal_Profile_Klient.Designer.cs">
+      <DependentUpon>Personal_Profile_Klient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Predzakaz_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Predzakaz_Form.Designer.cs">
+      <DependentUpon>Predzakaz_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procedure_Class.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registration_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration_Form.Designer.cs">
+      <DependentUpon>Registration_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table_Class.cs" />
+    <Compile Include="Tovar_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tovar_Form.Designer.cs">
+      <DependentUpon>Tovar_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tovar_Klient_Check.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tovar_Klient_Check.Designer.cs">
+      <DependentUpon>Tovar_Klient_Check.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Authorization_Form.resx">
+      <DependentUpon>Authorization_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Check_Export.resx">
+      <DependentUpon>Check_Export.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Check_Form.resx">
+      <DependentUpon>Check_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Connection_Form.resx">
+      <DependentUpon>Connection_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExportMenu.resx">
+      <DependentUpon>ExportMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice.resx">
+      <DependentUpon>Invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Klient_Form.resx">
+      <DependentUpon>Klient_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal_Profile_Employee.resx">
+      <DependentUpon>Personal_Profile_Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal_Profile_Klient.resx">
+      <DependentUpon>Personal_Profile_Klient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Predzakaz_Form.resx">
+      <DependentUpon>Predzakaz_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Registration_Form.resx">
+      <DependentUpon>Registration_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tovar_Form.resx">
+      <DependentUpon>Tovar_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tovar_Klient_Check.resx">
+      <DependentUpon>Tovar_Klient_Check.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Avtomagazin_Data_BaseDataSet.xsc">
+      <DependentUpon>Avtomagazin_Data_BaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Avtomagazin_Data_BaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Avtomagazin_Data_BaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Avtomagazin_Data_BaseDataSet.xss">
+      <DependentUpon>Avtomagazin_Data_BaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Avtomagazin_Data_BaseDataSet1.xsc">
+      <DependentUpon>Avtomagazin_Data_BaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Avtomagazin_Data_BaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Avtomagazin_Data_BaseDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Avtomagazin_Data_BaseDataSet1.xss">
+      <DependentUpon>Avtomagazin_Data_BaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Avtomagazin_Data_BaseDataSet2.xsc">
+      <DependentUpon>Avtomagazin_Data_BaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Avtomagazin_Data_BaseDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Avtomagazin_Data_BaseDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Avtomagazin_Data_BaseDataSet2.xss">
+      <DependentUpon>Avtomagazin_Data_BaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Avtomagazin_Data_BaseDataSet3.xsc">
+      <DependentUpon>Avtomagazin_Data_BaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Avtomagazin_Data_BaseDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Avtomagazin_Data_BaseDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Avtomagazin_Data_BaseDataSet3.xss">
+      <DependentUpon>Avtomagazin_Data_BaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Avtomagazin_Data_BaseDataSet4.xsc">
+      <DependentUpon>Avtomagazin_Data_BaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Avtomagazin_Data_BaseDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Avtomagazin_Data_BaseDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Avtomagazin_Data_BaseDataSet4.xss">
+      <DependentUpon>Avtomagazin_Data_BaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Avtomagazin_Data_BaseDataSet5.xsc">
+      <DependentUpon>Avtomagazin_Data_BaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Avtomagazin_Data_BaseDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Avtomagazin_Data_BaseDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Avtomagazin_Data_BaseDataSet5.xss">
+      <DependentUpon>Avtomagazin_Data_BaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
